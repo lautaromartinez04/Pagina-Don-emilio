@@ -1,0 +1,140 @@
+/*GRUPO DON EMILIO*/
+@font-face {
+    font-family: 'font';
+    src: url("images/MADE_TOMMY_Bold_PERSONAL_USE.otf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font';
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#marca{
+    width: 10vh;
+    height: 10vh;
+    margin: 0 0.5vh;
+    border: rgb(0, 0, 0) 2px solid;
+    transition: all 0.3s ease;
+}
+
+h1{
+    font-size: 11vh;
+    text-align: center;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    margin: 0 0vh 0 8vh;
+}
+
+h1 span{
+    font-size: 7vh;
+}
+
+.GrupoDonEmilio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 84vh;
+}
+
+.donemilio, .mharnes, .duyamis {
+    flex: 1;
+    height: 100%;
+    transition: flex 0.3s ease;
+    cursor: pointer;
+}
+#linea{
+    height: 2vh; 
+    width: 65%; 
+    background-color: #ffffff; 
+    margin-bottom: 2vh; 
+    border: black 2px solid;
+    transition: all 0.3s ease;
+}
+
+.donemilio:hover, .mharnes:hover, .duyamis:hover {
+    flex: 3;
+}
+
+.donemilio:hover ~ .mharnes, .donemilio:hover ~ .duyamis{
+    flex: 1;
+}
+
+.mharnes:hover ~ .donemilio, .mharnes:hover ~ .duyamis {
+    flex: 1;
+}
+
+.duyamis:hover ~ .donemilio, .duyamis:hover ~ .mharnes {
+    flex: 1;
+}
+/*DON EMILIO*/
+.donemilio{
+    background-color: #193b6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donemilio img{
+    max-width: 50vh;
+    max-height: 50vh;
+    width: 100%;
+}
+
+
+/*DUY AMIS*/
+
+.duyamis{
+    background-color: #ee2112;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.duyamis img{
+    max-width: 50vh;
+    max-height: 50vh;
+    width: 100%;
+}
+
+/*MHARNES*/
+
+.mharnes{
+    background-color:#2369cc ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mharnes img{
+    max-width: 50vh;
+    max-height: 50vh;
+    width: 100%;
+}
+
+/*FOOTER*/
+/*
+footer{
+    width: 100%;
+    height: 15vh;
+}
+*/
+/*colores don emilio 
+Rojo: #e3001b
+Azul: #2e3176
+Blanco: #fffffb */
