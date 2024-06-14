@@ -9,27 +9,27 @@ const marcamharnes = document.querySelector('.mharnesmarca');
 const linea = document.getElementById('linea');
 
 donemilio.addEventListener('mouseover', () => {
-    mainTitle.style.color ='#193b6e';
-    footer.style.backgroundColor = '#193b6e';
-    donemilio.style.boxShadow = '#193b6e 0px 0px 10px 0px';
-    marcadonemilio.style.boxShadow = '#193b6e 0px 0px 10px 0px';
-    linea.style.backgroundColor = '#193b6e';
+    mainTitle.style.color ='#0033a1';
+    footer.style.backgroundColor = '#0033a1';
+    donemilio.style.boxShadow = '#0033a1 0px 0px 10px 0px';
+    marcadonemilio.style.boxShadow = '#0033a1 0px 0px 10px 0px';
+    linea.style.backgroundColor = '#0033a1';
 });
 
 duyamis.addEventListener('mouseover', () => {
-    mainTitle.style.color = '#ee2112';
-    footer.style.backgroundColor = '#ee2112';
-    duyamis.style.boxShadow = '#ee2112 0px 0px 10px 0px';
-    marcaduyamis.style.boxShadow = '#ee2112 0px 0px 10px 0px';
-    linea.style.backgroundColor = '#ee2112';
+    mainTitle.style.color = '#E32515';
+    footer.style.backgroundColor = '#E32515';
+    duyamis.style.boxShadow = '#E32515 0px 0px 10px 0px';
+    marcaduyamis.style.boxShadow = '#E32515 0px 0px 10px 0px';
+    linea.style.backgroundColor = '#E32515';
 });
 
 mharnes.addEventListener('mouseover', () => {
-    mainTitle.style.color = '#2369cc';
-    footer.style.backgroundColor = '#2369cc';
-    mharnes.style.boxShadow = '#2369cc 0px 0px 10px 0px';
-    marcamharnes.style.boxShadow = '#2369cc 0px 0px 10px 0px';
-    linea.style.backgroundColor = '#2369cc';
+    mainTitle.style.color = '#1D71B8';
+    footer.style.backgroundColor = '#1D71B8';
+    mharnes.style.boxShadow = '#1D71B8 0px 0px 10px 0px';
+    marcamharnes.style.boxShadow = '#1D71B8 0px 0px 10px 0px';
+    linea.style.backgroundColor = '#1D71B8';
 });
 
 

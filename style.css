@@ -46,7 +46,7 @@ h1 span{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 84vh;
+    height: 82vh;
 }
 
 .donemilio, .mharnes, .duyamis {
@@ -81,7 +81,7 @@ h1 span{
 }
 /*DON EMILIO*/
 .donemilio{
-    background-color: #193b6e;
+    background-color: #0033a1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ h1 span{
 /*DUY AMIS*/
 
 .duyamis{
-    background-color: #ee2112;
+    background-color: #E32515;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ h1 span{
 /*MHARNES*/
 
 .mharnes{
-    background-color:#2369cc ;
+    background-color:#1D71B8 ;
     display: flex;
     justify-content: center;
     align-items: center;
