@@ -10,17 +10,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'font';
+    user-select: none;
 }
 
 header{
     text-align: center;
     width: 100%;
     transition: all 0.3s ease;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: inset 0px 0px 20px 0px black;
+    padding-top: 2vh;
 }
 
 #marca{
@@ -28,6 +31,7 @@ header{
     height: 10vh;
     margin: 0 0.5vh;
     border: rgb(0, 0, 0) 2px solid;
+    box-shadow: inset 0px 0px 10px 0px black;
     transition: all 0.3s ease;
 }
 
@@ -36,6 +40,7 @@ h1{
     text-align: center;
     -webkit-text-stroke: 2px rgb(0, 0, 0);
     margin: 0 0vh 0 8vh;
+    color: transparent;
 }
 
 h1 span{
@@ -46,7 +51,7 @@ h1 span{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 82vh;
+    height: 80vh;
 }
 
 .donemilio, .mharnes, .duyamis {
@@ -54,6 +59,7 @@ h1 span{
     height: 100%;
     transition: flex 0.3s ease;
     cursor: pointer;
+    box-shadow: inset 0px 0px 10px 0px black;
 }
 #linea{
     height: 2vh; 

@@ -9,37 +9,43 @@ const marcamharnes = document.querySelector('.mharnesmarca');
 const linea = document.getElementById('linea');
 
 donemilio.addEventListener('mouseover', () => {
-    mainTitle.style.color ='#0033a1';
-    footer.style.backgroundColor = '#0033a1';
-    donemilio.style.boxShadow = '#0033a1 0px 0px 10px 0px';
-    marcadonemilio.style.boxShadow = '#0033a1 0px 0px 10px 0px';
+    mainTitle.style.background = 'linear-gradient(to bottom, white, #0033a1)';
+    mainTitle.style.webkitBackgroundClip = 'text';
+    mainTitle.style.color = 'transparent';
+    donemilio.style.boxShadow = '0px 0px 10px 0px #0033a1';
+    marcadonemilio.style.boxShadow = '0px 0px 10px 0px #0033a1';
     linea.style.backgroundColor = '#0033a1';
+    duyamis.style.filter = 'blur(2px)';
+    mharnes.style.filter = 'blur(2px)';
 });
 
 duyamis.addEventListener('mouseover', () => {
-    mainTitle.style.color = '#E32515';
-    footer.style.backgroundColor = '#E32515';
-    duyamis.style.boxShadow = '#E32515 0px 0px 10px 0px';
-    marcaduyamis.style.boxShadow = '#E32515 0px 0px 10px 0px';
+    mainTitle.style.background = 'linear-gradient(to bottom, white, #E32515)';
+    mainTitle.style.webkitBackgroundClip = 'text';
+    mainTitle.style.color = 'transparent';
+    duyamis.style.boxShadow = '0px 0px 10px 0px #E32515';
+    marcaduyamis.style.boxShadow = '0px 0px 10px 0px #E32515';
     linea.style.backgroundColor = '#E32515';
+    donemilio.style.filter = 'blur(2px)';
+    mharnes.style.filter = 'blur(2px)';
 });
 
 mharnes.addEventListener('mouseover', () => {
-    mainTitle.style.color = '#1D71B8';
-    footer.style.backgroundColor = '#1D71B8';
-    mharnes.style.boxShadow = '#1D71B8 0px 0px 10px 0px';
-    marcamharnes.style.boxShadow = '#1D71B8 0px 0px 10px 0px';
+    mainTitle.style.background = 'linear-gradient(to bottom, white, #1D71B8)';
+    mainTitle.style.webkitBackgroundClip = 'text';
+    mainTitle.style.color = 'transparent';
+    mharnes.style.boxShadow = '0px 0px 10px 0px #1D71B8';
+    marcamharnes.style.boxShadow = '0px 0px 10px 0px #1D71B8';
     linea.style.backgroundColor = '#1D71B8';
+    donemilio.style.filter = 'blur(2px)';
+    duyamis.style.filter = 'blur(2px)';
 });
-
-
 
 const articles = document.querySelectorAll('.GrupoDonEmilio article');
 articles.forEach(article => {
     article.addEventListener('mouseout', () => {
         mainTitle.style.color = 'white';
-        mainTitle.style.backgroundColor = '';
-        footer.style.backgroundColor = '';
+        mainTitle.style.background = 'transparent'; // Restaurar el fondo a transparente
         donemilio.style.boxShadow = '';
         mharnes.style.boxShadow = '';
         duyamis.style.boxShadow = '';
@@ -47,5 +53,8 @@ articles.forEach(article => {
         marcamharnes.style.boxShadow = '';
         marcaduyamis.style.boxShadow = '';
         linea.style.backgroundColor = '';
+        duyamis.style.filter = '';
+        mharnes.style.filter = '';
+        donemilio.style.filter = '';
     });
 });
