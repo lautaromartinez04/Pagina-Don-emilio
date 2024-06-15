@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'font';
+    src: url("../../sources/tipografias/MADE_TOMMY_Bold_PERSONAL_USE.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    user-select: none;
+}
+
+body{
+    background-color: #b8d9ab;
+}
+
+#imglogo{
+    height: 8vh;
+}
+
+#navbar{
+    background-color: #0033a1;
+    box-shadow: inset 0px 0px 20px 0px black, 0px 0px 20px 0px black;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*INICIO*/
+
+#INICIO{
+    background-image: url("../images/donemilio/donemilio.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+#INICIO .poster{
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin: 5vh;
+    border-radius: 5vh;
+}
+
+#INICIO img{
+    max-width: 70vh;
+    max-height: 70vh;
+    border-radius: 5px;
+    margin: 5vh;
+}
+
+/*TARJETAS*/
+#Skills{
+    color: black;
+    text-align: center;
+    font-family: 'font';
+}
+
+#Skills .title-skills{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-slider{
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center
+}
+
+.slider{
+    display:grid;
+    height:120vh;
+    margin:auto;
+    overflow:hidden;
+    place-items:center;
+    position:relative;
+    width:100%
+}
+    
+.slide-track{
+    animation:scroll 25s linear infinite;
+    display:flex;
+    width:3000px
+}
+
+.slide{
+    align-items:center;
+    border-radius:.5rem;
+    box-shadow:0 4px 25px rgba(14,36,49,.15);
+    display:flex;
+    height:80vh;
+    justify-content:center;
+    margin:2rem;
+    
+    perspective:100px;
+    width:250px
+}
+
+.slide img{
+    height:100%;
+    transition:transform 1s;
+    border-radius:.5rem;
+}
+
+.slider:before{
+    left:0;
+    top:0
+}
+
+.slide:after{
+    right:0;
+    top:0;
+    transform:rotate(180deg)
+}
+.slide img:hover{
+    transform:translateZ(10px)
+}
+@keyframes scroll{
+    0%{
+        transform:translateX(0)
+    }to{
+        transform:translateX(-1500px)
+    }
+}

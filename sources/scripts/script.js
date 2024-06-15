@@ -1,4 +1,4 @@
-const mainTitle = document.getElementById('titulo');
+const mainTitle = document.getElementById('grupo');
 const footer = document.getElementById('footer');
 const donemilio = document.querySelector('.donemilio');
 const duyamis = document.querySelector('.duyamis');
@@ -9,7 +9,7 @@ const marcamharnes = document.querySelector('.mharnesmarca');
 const linea = document.getElementById('linea');
 
 donemilio.addEventListener('mouseover', () => {
-    mainTitle.style.background = 'linear-gradient(to bottom, white, #0033a1)';
+    mainTitle.style.background = 'linear-gradient(to bottom, lightgray, #0033a1)';
     mainTitle.style.webkitBackgroundClip = 'text';
     mainTitle.style.color = 'transparent';
     donemilio.style.boxShadow = '0px 0px 10px 0px #0033a1';
@@ -20,7 +20,7 @@ donemilio.addEventListener('mouseover', () => {
 });
 
 duyamis.addEventListener('mouseover', () => {
-    mainTitle.style.background = 'linear-gradient(to bottom, white, #E32515)';
+    mainTitle.style.background = 'linear-gradient(to bottom, lightgray, #E32515)';
     mainTitle.style.webkitBackgroundClip = 'text';
     mainTitle.style.color = 'transparent';
     duyamis.style.boxShadow = '0px 0px 10px 0px #E32515';
@@ -31,7 +31,7 @@ duyamis.addEventListener('mouseover', () => {
 });
 
 mharnes.addEventListener('mouseover', () => {
-    mainTitle.style.background = 'linear-gradient(to bottom, white, #1D71B8)';
+    mainTitle.style.background = 'linear-gradient(to bottom, lightgray, #1D71B8)';
     mainTitle.style.webkitBackgroundClip = 'text';
     mainTitle.style.color = 'transparent';
     mharnes.style.boxShadow = '0px 0px 10px 0px #1D71B8';
@@ -41,11 +41,11 @@ mharnes.addEventListener('mouseover', () => {
     duyamis.style.filter = 'grayscale(0.3)';
 });
 
-const articles = document.querySelectorAll('.GrupoDonEmilio article');
+const articles = document.querySelectorAll('.GrupoDonEmilio a');
 articles.forEach(article => {
     article.addEventListener('mouseout', () => {
-        mainTitle.style.color = 'white';
-        mainTitle.style.background = 'transparent'; // Restaurar el fondo a transparente
+        mainTitle.style.color = '';
+        mainTitle.style.background = '';
         donemilio.style.boxShadow = '';
         mharnes.style.boxShadow = '';
         duyamis.style.boxShadow = '';
