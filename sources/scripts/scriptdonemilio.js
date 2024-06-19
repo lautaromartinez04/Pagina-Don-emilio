@@ -1,4 +1,4 @@
-var map = L.map('map').setView([-32.4162,-63.2291], 15); // Coordenadas del centro del mapa y zoom
+var map = L.map('map').setView([-32.4162,-63.2291], 14); // Coordenadas del centro del mapa y zoom
 
 // Añadir la capa de OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
