@@ -3,11 +3,15 @@
     src: url("../../sources/tipografias/MADE_TOMMY_Bold_PERSONAL_USE.otf");
 }
 
+@font-face {
+    font-family: 'font1';
+    src: url("../../sources/tipografias/MADE_TOMMY_PERSONAL_USE.otf");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     user-select: none;
 }
 
@@ -26,6 +30,8 @@ body{
 #navbar{
     background-color:#e42313;
     box-shadow: inset 0 0 20px 0px rgba(0, 0, 0, 0.5), 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 3vh 3vh;
+    border-bottom: #000000 2px solid;
 }
 
 .colorinicio{
@@ -87,7 +93,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     margin: 5vh;
     border-radius: 5vh;
 }
@@ -112,19 +117,30 @@ body{
 
 /*UBICACION*/
 #UBICACION{
-
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#UBICACIONart{
     text-align: center;
     background: white;
-    border: 2px solid rgba(255, 255, 255, 0.18);
+    border: 2px solid rgba(0, 0, 0,1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
     border-radius: 4vh;
-    margin: 1% 5%;
+    margin: 10%;
+    
 }
 
 #UBICACION h2{
-    color: #0033a1;
-    margin-top: 3vh;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 8vh;
+    background-color: #e42313;
+    border-radius: 3.5vh 3.5vh 0 0;
+    -webkit-text-stroke: #000000 2px;
+    border-bottom: #000000 1px solid;
 }
 
 .mapas{
@@ -166,8 +182,9 @@ body{
 
 /*CONTACTO*/
 #CONTACTO{
-    height: 85vh;
+    border-top: #000000 2px solid;
     width: 100%;
+    min-height: 90vh;
     z-index: -1;
     display: flex;
     justify-content: center;
@@ -180,18 +197,55 @@ body{
 
 
 #tarjeta{
-
     background-color: #ffffff;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.37);
     border: 2px solid rgb(0, 0, 0);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-    height: 65vh;
-    width: 60vw;
+    margin: 5vh;
+    border-radius: 2vh;
+    max-width: 90%;
 }
 
+#tarjeta h2{
+    background-color: #e42313;
+    color: white;
+    -webkit-text-stroke: #000000 2px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 1.5vh 1.5vh 0 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    border-bottom: #000000 1px solid;
+}
+
+#tarjeta div{
+    width: auto;
+    height: auto;
+    font-size: 3vh;
+    text-align: center;
+}
+
+#tarjeta p{
+    text-align: center;
+    margin: 2vh;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#tarjeta i{
+    font-size: 15vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    width: 100%;
+    -webkit-text-stroke: #000000 2px;
+}
 
 /*FOOTER*/
 
@@ -201,6 +255,30 @@ footer{
     background-color: #0033a1;
     box-shadow: inset 0px 0px 20px 0px black, 0px 0px 20px 0px black;
     z-index: -1;
+
+}
+
+#footerart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4vh;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+}
+
+#footerart a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10vh;
+    text-align: center;
+}
+
+#copy{
+    font-size: 2vh;
+    color: white;
 }
 
 
@@ -227,5 +305,28 @@ footer{
 
     #INICIO p{
         font-size: 1.5vh;
+    }
+
+    /*CONTACTO*/
+    #tarjeta i{
+        font-size: 5vh;
+    } 
+
+    #tarjeta h2{
+        font-size: 6vh;
+    }
+
+    /*footer*/
+    #footerart img, #logofooter{
+        display: none;
+    }
+
+    #footerart div, #subir{
+        width: 100%;
+        text-align: center;
+    }
+
+    #UBICACION h2{
+        font-size: 5vh;
     }
 }
