@@ -142,6 +142,7 @@ body{
     background-color: #e42313;
     border-radius: 3.5vh 3.5vh 0 0;
     border-bottom: #000000 1px solid;
+    -webkit-text-stroke: #000000 1px;
 }
 
 .mapas{
@@ -223,6 +224,7 @@ body{
     align-items: center;
     font-size: 8vh;
     border-bottom: #000000 1px solid;
+    -webkit-text-stroke: #000000 1px;
 }
 
 #tarjeta div{
@@ -244,7 +246,7 @@ body{
     margin-bottom: 3vh;
     text-align: center;
     width: 100%;
-    -webkit-text-stroke: #000000 2px;
+    -webkit-text-stroke: #000000 1px;
 }
 
 /*FOOTER*/
