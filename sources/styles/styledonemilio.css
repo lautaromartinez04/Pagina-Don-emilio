@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family: "font";
 }
 
 body{
@@ -65,12 +66,12 @@ body{
 }
 
 .nav-link{
-    color: white;
     font-weight: bold;
     -webkit-text-stroke: #000000 1px;
     font-size: 3vh;
     margin: 2vh;
     text-align: center;
+   
 }
 
 
