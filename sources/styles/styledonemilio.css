@@ -243,16 +243,16 @@ body{
 #tarjeta p{
     text-align: center;
     margin: 2vh;
-    font-size: 3vh;
+    font-size: vh;
     font-weight: bold;
 }
 
 #tarjeta i{
-    font-size: 15vh;
+    font-size: 8vh;
     margin-bottom: 3vh;
     text-align: center;
     width: 100%;
-    -webkit-text-stroke: #000000 1px;
+    -webkit-text-stroke: #000000 2px;
 }
 
 /*FOOTER*/
@@ -317,7 +317,7 @@ footer{
 
     /*CONTACTO*/
     #tarjeta i{
-        font-size: 5vh;
+        font-size: 10vh;
     } 
 
     #tarjeta h2{
