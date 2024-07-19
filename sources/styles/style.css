@@ -17,12 +17,12 @@ header{
     text-align: center;
     width: 100%;
     transition: all 0.5s ease;
-    background-color: rgb(219, 219, 219);
+    background-color: #303030;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: inset 0px 0px 20px 0px black;
+    box-shadow: inset 0px 0px 10px 0px black;
     padding-top: 2vh;
     color: white;
 }
@@ -31,19 +31,27 @@ header{
     width: 10vh;
     height: 10vh;
     margin: 0 0.5vh;
-    border: rgb(0, 0, 0) 2px solid;
-    box-shadow: inset 0px 0px 10px 0px black;
-    transition: all 0.5s ease;
+    border: rgb(255, 255, 255) 1px solid;
+    box-shadow: inset 0px 0px 3px 0px black;
 }
 
-#grupo{
+.donemiliomarca{
+    background-color: #0033a1;
+    transition: all 0.5s ease;
+}
+.duyamismarca{
+    background-color: #E32515;
+    transition: all 0.5s ease;
+}
+.mharnesmarca{
+    background-color: #1D71B8;
     transition: all 0.5s ease;
 }
 
 h1{
     font-size: 11vh;
     text-align: center;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    
     margin: 0 0vh 0 8vh;
 }
 
@@ -64,13 +72,14 @@ h1 span{
     transition: all 0.3s ease;
     cursor: pointer;
     box-shadow: inset 0px 0px 10px 0px black;
+    transition: all 0.5s ease;
 }
+
 #linea{
     height: 2vh; 
     width: 65%; 
     background-color: #ffffff; 
     margin-bottom: 2vh; 
-    border: black 2px solid;
     transition: all 0.5s ease;
 }
 
