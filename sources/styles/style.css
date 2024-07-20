@@ -113,7 +113,7 @@ h1 span{
 
 .donemilio img{
     max-height: 50vh;
-    max-width: 50vh;
+    max-width: 100%;
 }
 
 
@@ -125,11 +125,12 @@ h1 span{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
-.duyamis img{
+.duyamis img{ 
     max-height: 50vh;
-    max-width: 50vh;
+    max-width: 100%;
 }
 
 /*MHARNES*/
@@ -144,7 +145,7 @@ h1 span{
 
 .mharnes img{
     max-height: 50vh;
-    max-width: 50vh;
+    max-width: 100%;
 }
 
 
