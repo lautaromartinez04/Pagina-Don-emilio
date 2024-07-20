@@ -14,9 +14,12 @@
 }
 
 header{
+    background-image: url("../../sources/images/fondoheader.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     width: 100%;
-    transition: all 0.5s ease;
     background-color: #303030;
     display: flex;
     justify-content: center;
@@ -51,7 +54,7 @@ header{
 h1{
     font-size: 11vh;
     text-align: center;
-    
+    -webkit-text-stroke: black 2px;
     margin: 0 0vh 0 8vh;
 }
 
@@ -81,6 +84,7 @@ h1 span{
     background-color: #ffffff; 
     margin-bottom: 2vh; 
     transition: all 0.5s ease;
+    border: black 2px solid;
 }
 
 .donemilio:hover, .mharnes:hover, .duyamis:hover {
