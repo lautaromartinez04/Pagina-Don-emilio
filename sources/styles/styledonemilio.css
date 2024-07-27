@@ -41,17 +41,16 @@ body{
 }
 
 .colorinicio, .colorubicacion, .colorcontacto, .colorvolver{
-    border-radius: 1vh;
+    border-radius: 2vh;
     transition: border 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease !important;
-    border: #e42313 2px solid;
+    border: #e42313 4px solid;
     padding: 10px 20px;
 
 }
 
 .colorinicio:hover, .colorubicacion:hover, .colorcontacto:hover, .colorvolver:hover{
-    box-shadow: #ffffff 0px 0px 20px 0px,inset 0 0 20px 0px #ffffff;
-    background-color: white;
-    color: #e42313 !important; 
+    border: rgba(255, 255, 255,0.8) 4px solid;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
 }
 
 .container-fluid{
@@ -62,7 +61,7 @@ body{
 
 .nav-link{
     font-weight: bold;
-    -webkit-text-stroke: #000000 1px;
+    letter-spacing: 1px;
     font-size: 3vh;
     margin: 2vh;
     text-align: center;
@@ -137,6 +136,10 @@ body{
     border-radius: 3.5vh 3.5vh 0 0;
     border-bottom: #000000 1px solid;
     -webkit-text-stroke: #000000 1px;
+}
+
+#UBICACION p{
+    margin: 1vh;
 }
 
 .mapas{
